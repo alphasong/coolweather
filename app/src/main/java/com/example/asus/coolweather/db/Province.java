@@ -1,0 +1,37 @@
+package com.example.asus.coolweather.db;
+
+import android.provider.ContactsContract;
+
+import org.litepal.crud.DataSupport;
+
+/**
+ * Created by ASUS on 2017/1/15.
+ */
+
+public class Province extends DataSupport {
+    private int id;
+    private String provinceName;
+    private int provinceCode;
+
+    private int getId(){
+        return id;
+    }
+    private void setId(int id){
+        this.id = id;
+    }
+
+    public String getProvinceName(){
+        return provinceName;
+    }
+    public void setProvinceName(String provinceName){
+        this.provinceName = provinceName;
+    }
+
+    public int getProvinceCode(){
+        return provinceCode;
+    }
+    public void setProvinceCode(int provinceCode){
+        this.provinceCode = provinceCode;
+    }
+
+}
