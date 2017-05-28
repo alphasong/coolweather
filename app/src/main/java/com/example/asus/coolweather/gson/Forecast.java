@@ -1,0 +1,28 @@
+package com.example.asus.coolweather.gson;
+
+import com.google.gson.annotations.SerializedName;
+
+/**
+ * Created by ASUS on 2017/1/26.
+ */
+
+public class Forecast {
+
+    public String date;
+
+    @SerializedName("cond")
+    public More more;
+
+    @SerializedName("tmp")
+    public Temperate temperate;
+
+    public class Temperate{
+        public String max;
+        public String min;
+    }
+
+    public class More{
+        @SerializedName("txt_d")
+        public String info;
+    }
+}
